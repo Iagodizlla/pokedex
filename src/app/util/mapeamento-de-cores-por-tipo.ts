@@ -1,4 +1,4 @@
-import { MapeamentoDeCores } from "../models/mapeamento-de-cores";
+import { MapeamentoDeCores } from '../models/mapeamento-de-cores';
 
 export const mapeamentoDeCoresPorTipo: MapeamentoDeCores = {
     Normal: 'fundo-tipo-normal',
