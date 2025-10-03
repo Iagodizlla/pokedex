@@ -87,10 +87,10 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "baseHref": "https://academiadoprogramador-fullstack.github.io/pokedex-2025/",
-            "repo": "https://github.com/academiadoprogramador-fullstack/pokedex-2025",
-            "name": "Tiago Santini",
-            "email": "tiagosantiniathayde@outlook.com"
+            "baseHref": "https://iagodizlla.github.io/pokedex/",
+            "repo": "https://github.com/iagodizlla/pokedex",
+            "name": "Iago Henrique Schlemper",
+            "email": "iagoschlemper@gmail.com"
           }
         }
       }
