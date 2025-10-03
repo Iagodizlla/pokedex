@@ -3,9 +3,10 @@ export interface Pokemon {
   nome: string;
   urlSprite?: string;
   tipos: string[];
+  favorito: boolean;
 }
 
-export interface DetalhesDoPokemon extends Pokemon{
+export interface DetalhesDoPokemon extends Pokemon {
   sons: SonsDoPokemon;
   sprites: string[];
 }
