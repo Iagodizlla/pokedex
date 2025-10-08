@@ -15,18 +15,18 @@ import { LocalStorageService } from '../../services/local-storage-service';
 })
 
 export class ListagemPokemons {
-  public pokemons$?: Observable<Pokemon[]>;
-
- public pokemonsFavoritos$?: Observable<Pokemon[]>;
 
   public readonly localStorageService = inject(LocalStorageService);
   private readonly pokeApiService = inject(PokeApiService);
 
   constructor(private http: HttpClient) {}
 
-  ngOnInit(): void {
+  public pokemonsFavoritos$?: Observable<Pokemon[]>;
+  public pokemons$?: Observable<Pokemon[]>;
 
-    this.pokemons$ = this.pokeApiService.selecionarPokemons();
+
+  ngOnInit(): void {
     this.pokemonsFavoritos$ = this.localStorageService.selecionarFavoritos();
+    this.pokemons$ = this.pokeApiService.selecionarPokemons();
   }
 }
