@@ -4,7 +4,6 @@ import { NgClass } from '@angular/common';
 import { mapeamentoDeCoresPorTipo } from '../../util/mapeamento-de-cores-por-tipo';
 import { RouterLink } from '@angular/router';
 
-
 @Component({
   selector: 'app-card-pokemon',
   imports: [NgClass, RouterLink],
@@ -16,10 +15,11 @@ import { RouterLink } from '@angular/router';
             <a class="text-decoration-none" [routerLink]="['/pokemons', pokemon.id]">
               <h5 class="card-title">{{ pokemon.nome }}</h5>
             </a>
-            } @else {
-              <h5 class="card-title">{{ pokemon.nome }}</h5>
-            }
-            <div class="d-flex justify-content-center gap-2">
+          } @else {
+            <h5 class="card-title">{{ pokemon.nome }}</h5>
+          }
+
+          <div class="d-flex justify-content-center gap-2">
             @for (tipo of pokemon.tipos; track $index) {
               <span
                 class="badge rounded-pill text-dark fs-6"
@@ -30,8 +30,6 @@ import { RouterLink } from '@angular/router';
           </div>
 
           <img style="min-width: 200px;" [src]="pokemon.urlSprite" [alt]="pokemon.nome" />
-
-          <br />
 
           <div class="app-container-alternar-status" title="Alternar Status de Favorito">
             @if (pokemon.favorito) {

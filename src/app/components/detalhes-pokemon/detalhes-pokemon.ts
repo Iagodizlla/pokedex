@@ -3,10 +3,10 @@ import { ActivatedRoute } from '@angular/router';
 import { DetalhesDoPokemon } from '../../models/pokemon';
 import { AsyncPipe, NgClass } from '@angular/common';
 import { mapeamentoDeCoresPorTipo } from '../../util/mapeamento-de-cores-por-tipo';
-import { CardPokemon } from '../card-pokemon/card-pokemon';
 import { PokeApiService } from '../../services/poke-api-service';
 import { Observable } from 'rxjs';
 import { LocalStorageService } from '../../services/local-storage-service';
+import { CardPokemon } from '../card-pokemon/card-pokemon';
 
 @Component({
   selector: 'app-detalhes-pokemon',
