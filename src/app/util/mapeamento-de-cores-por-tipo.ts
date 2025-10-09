@@ -18,4 +18,5 @@ export const mapeamentoDeCoresPorTipo: MapeamentoDeCores = {
     Dark: 'fundo-tipo-sombrio',
     Fairy: 'fundo-tipo-fada',
     Steel: 'fundo-tipo-aco',
+    Dragon: 'fundo-tipo-dragao',
   };
